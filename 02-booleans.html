@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booleans</title>
+	</head>
+	<body>
+		<script>
+			/*
+     we have two booleans  values.
+
+     True 
+     False.
+
+     order of operations
+     1. (..)
+     2. * /
+     3. + -
+     4. Comparison operators
+
+     if statements => lets us write multiple groups of code and then decide which code to run.
+     
+     */
+			console.log(3 > 5);
+			// if the value in the if is true it will display the code else if it is false it wont display anything.
+
+			if (true) {
+				console.log("Hello Hendrix Ombonyo");
+			}
+
+			if (false) {
+				console.log("Hello Hendrix");
+			}
+
+			// the else branch lets us run the false part of the boolean statement
+
+			if (false) {
+				console.log("Hello Hendrix");
+			} else {
+				console.log("Hi");
+			}
+
+			if (15 >= 18) {
+				console.log("You can drive Hendrix, its time to buy your dream car.");
+			} else {
+				console.log(
+					"Sorry Hendrix, you can not drive. Legal driving age is 18 years old."
+				);
+			}
+
+			/* 
+            syntax rules for writting booleans.
+
+            we must have a condition in the if brakect.
+            else branch is optional, use it when neccesary.
+            we can have more than one condition.
+            we can combine if statements with variables.
+            */
+
+			// use const by defualt if the value of the variable is not going to change, it its going to change thtn use let.
+			const age = 20;
+			if (age >= 18) {
+				console.log("You can vote Hendrix.");
+			} else if (age >= 10) {
+				console.log("You are almost there to vote.");
+			} else {
+				console.log("You can not vote.");
+			}
+		</script>
+	</body>
+</html>
