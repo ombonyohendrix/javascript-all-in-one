@@ -83,6 +83,29 @@
 			console.log(true || false);
 			console.log(!true);
 			console.log(!false);
+
+			/* truthy and falsy values 
+			Falsy values.
+			  false
+			  0
+			  ''
+			  NaN
+			  undefined
+			  null
+			Any value that is not on this list is a truthy value.
+			we use truthy or falsy values as short cuts to our code.
+		*/
+
+			const cartQuantity = 5;
+			// instead of using comparison operators we can use truthy or falsy values as short cut.
+			if (cartQuantity) {
+				console.log("Cart has products.");
+			}
+			const cartQuantity1 = 0;
+			if (cartQuantity1) {
+				// when its falsy it wont display on the console.
+				console.log("Cart has no products");
+			}
 		</script>
 	</body>
 </html>
