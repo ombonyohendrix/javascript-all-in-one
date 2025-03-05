@@ -106,6 +106,38 @@
 				// when its falsy it wont display on the console.
 				console.log("Cart has no products");
 			}
+			/*
+			shortcuts for if-statements.
+			    1. Tenary Operator ? => we can save a tenary operator in a variable.
+				2. Guard Operator && =>short-circuit-evaluation. stops the code early if the first block is false.
+				3. Default Operator ||=> checks atleast one side is truthy.
+			*/
+
+			const results = 0 ? "truthy" : "falsy";
+			console.log(results);
+			// shortcut for
+
+			if (true) {
+				("truthy");
+			} else {
+				("falsy");
+			}
+
+			false && console.log("Hello");
+
+			const message = false && "Hello";
+			//the value false will be saved in our variable.
+			console.log(message);
+
+			const message1 = true && "Hello";
+			// the value Hello will be saved in our variable.
+			console.log(message1);
+			// || operator is used to set default value.
+			const currency = "EUR" || "USD";
+			console.log(currency);
+
+			const currency1 = undefined || "USD";
+			console.log(currency1);
 		</script>
 	</body>
 </html>
