@@ -15,6 +15,36 @@
 			greeeting();
 			greeeting();
 			greeeting();
+			// return statement gets a value out of a function.
+			// a parameter puts a value into a function.
+			/*
+  in functions its recommended to use return statements over global varibles to avoid naming conflicts.
+  A parameter only exist in a function scope. We cantuse it outside the function.
+  A function can have more than one parameter.
+  You can also set a defualt parameter in a function.
+  */
+			function sumOfTwoNumbers() {
+				let num1 = 20;
+				let num2 = 30;
+				let sum;
+				sum = num1 + num2;
+				return sum;
+			}
+
+			console.log(sumOfTwoNumbers());
+			//function using a parameter.
+			function multiplication(num1, num2) {
+				return num1 * num2;
+			}
+
+			console.log(multiplication(20, 30));
+			// default value of a parameter.
+
+			function calculateTax(cost, taxPercent = 0.1) {
+				return cost * taxPercent;
+			}
+			console.log(calculateTax(200, 0.2));
+			console.log(calculateTax(5000));
 		</script>
 	</body>
 </html>
