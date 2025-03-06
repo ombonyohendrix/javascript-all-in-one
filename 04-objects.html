@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Objects.</title>
+	</head>
+	<body>
+		<script>
+			/*An object groups multiple values together.
+            objects make our code more organised.
+            objects lets us use multiple properties together.
+            
+            property-value pair.
+            we use dot notation to access a value of an object.
+            we can also use the dot nation to add values to the object.
+
+            to delete a property from an object we use delete key word.
+
+            object is just but another type of value. we can save it in a variable.
+            
+            */
+			const product = {
+				name: "sock",
+				price: 1000,
+			};
+			console.log(typeof product);
+			console.log(product.name);
+			console.log(product.price);
+
+			product.name = "book";
+			product.price = 200;
+
+			console.log(product.name);
+			console.log(product.price);
+
+			delete product.name;
+			console.log(product);
+		</script>
+	</body>
+</html>
